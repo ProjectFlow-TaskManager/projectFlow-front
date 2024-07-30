@@ -1,6 +1,6 @@
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import type { Metadata } from 'next';
 
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import ReactQueryProvider from '@/app/providers/withReactQuery';
 
 export const metadata: Metadata = {
