@@ -2,7 +2,7 @@ import React from 'react';
 
 import AuthPage from '@/pages/login-page/AuthPage';
 
-const Login = () => {
+const Register = () => {
   return (
     <div>
       <AuthPage />
@@ -10,4 +10,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

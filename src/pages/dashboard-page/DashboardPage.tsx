@@ -14,7 +14,7 @@ const DashboardPage = () => {
       <Stack>
         <Flex gap={5} justify={'space-between'} align={'flex-end'}>
           <Stack>
-            <Title order={1}>Дашборд</Title>
+            <Title order={1}>Проекты</Title>
             <Text size="sm" c={'gray'}>
               Выбирете существующий проект или создайте новый
             </Text>
