@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import { Button, Group, Stack, Text, Title } from '@mantine/core';
-import { IconPlus } from '@tabler/icons-react';
+import { Button, Flex, Stack, Text, Title } from '@mantine/core';
+import { IconClipboardList } from '@tabler/icons-react';
 
 import ProjectList from '@/features/ProjectsList/ProjectList';
 import SearchProject from '@/features/SearchProject/SearchProject';
@@ -12,17 +12,22 @@ const DashboardPage = () => {
   return (
     <PageWrapper>
       <Stack>
-        <Group gap={5} justify={'space-between'}>
+        <Flex gap={5} justify={'space-between'} align={'flex-end'}>
           <Stack>
             <Title order={1}>Дашборд</Title>
             <Text size="sm" c={'gray'}>
               Выбирете существующий проект или создайте новый
             </Text>
           </Stack>
-          <Button size={'md'} variant={'outline'} leftSection={<IconPlus size={21} />}>
+          <Button
+            size={'md'}
+            variant={'light'}
+            color="orange"
+            leftSection={<IconClipboardList size={21} />}
+          >
             Создать проект
           </Button>
-        </Group>
+        </Flex>
         <SearchProject value={''} onChange={() => console.log('value')} />
         <ProjectList />
       </Stack>
