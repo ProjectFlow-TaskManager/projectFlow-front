@@ -1,0 +1,21 @@
+.container {
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.content {
+  display: none;
+}
+
+.opened {
+  display: block;
+  width: 300px;
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  z-index: 2;
+}

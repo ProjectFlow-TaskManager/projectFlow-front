@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 
 import ReactQueryProvider from '@/app/providers/withReactQuery';
 
+import Header from '@/features/Header/Header';
+
 import '@mantine/core/styles.css';
 
 export const metadata: Metadata = {
@@ -22,7 +24,10 @@ export default function RootLayout({
       </head>
       <body>
         <ReactQueryProvider>
-          <MantineProvider>{children}</MantineProvider>
+          <MantineProvider>
+            <Header />
+            {children}
+          </MantineProvider>
         </ReactQueryProvider>
       </body>
     </html>
