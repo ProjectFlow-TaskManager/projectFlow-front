@@ -1,0 +1,13 @@
+.navbar {
+  height: calc(100vh - 50px);
+  position: sticky;
+  left: 0;
+  padding: 10px;
+  border-right: 1px solid rgba(34, 60, 80, 0.2);
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  height: calc(100vh - 50px);
+}

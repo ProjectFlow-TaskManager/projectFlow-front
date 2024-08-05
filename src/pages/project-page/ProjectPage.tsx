@@ -1,9 +1,9 @@
 import React from 'react';
 
-import styles from './ProjectPage.module.scss';
+import PageWrapper from '@/shared/ui/PageWrapper/PageWrapper';
 
 const ProjectPage = () => {
-  return <div className={styles.container}>[ProjectPage]</div>;
+  return <div>[ProjectPage]</div>;
 };
 
 export default ProjectPage;
